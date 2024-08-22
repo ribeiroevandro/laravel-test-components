@@ -2,10 +2,10 @@
 
 namespace App\View\Components;
 
+use App\View\BaseComponent;
 use Illuminate\Contracts\View\View;
-use Illuminate\View\Component;
 
-class Link extends Component
+class Link extends BaseComponent
 {
     /**
      * Create a new component instance.
@@ -15,10 +15,7 @@ class Link extends Component
         //
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     */
-    public function render(): View
+    public function blade(): View
     {
         return view('components.link');
     }
